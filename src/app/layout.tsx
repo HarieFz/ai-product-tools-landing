@@ -1,15 +1,41 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import Header from "@/components/Header";
+import Ilustration from "../../public/images/page-illustration.svg";
+import BlurredShapeGray from "../../public/images/blurred-shape-gray.svg";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nacelle = localFont({
+  src: [
+    {
+      path: "../../public/fonts/nacelle-regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/nacelle-italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/nacelle-semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/nacelle-semibolditalic.woff2",
+      weight: "600",
+      style: "italic",
+    },
+  ],
+  variable: "--font-nacelle",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +51,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${nacelle.variable} flex flex-col items-center min-h-screen bg-gray-950 antialiased`}
       >
-        {children}
+        <div className="relative max-w-6xl">
+          <div className="absolute -top-10 left-60 z-0">
+            <BlurredShapeGray className="w-full h-full" />
+          </div>
+          <div className="absolute top-0 -right-16 z-0">
+            <Ilustration className="w-full h-full" />
+          </div>
+          <div className="relative z-10">
+            <Header />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
