@@ -17,7 +17,7 @@ export default function Signup() {
             Name <span>*</span>
           </Label>
           <div className="form-border">
-            <Input placeholder="Your Full Name" className="form-input group" />
+            <Input placeholder="Your full name" className="form-input group" />
           </div>
         </Field>
 
@@ -26,7 +26,7 @@ export default function Signup() {
             Company Name <span>*</span>
           </Label>
           <div className="form-border">
-            <Input placeholder="Your Company Name" className="form-input group" />
+            <Input placeholder="Your company name" className="form-input group" />
           </div>
         </Field>
 
@@ -35,7 +35,7 @@ export default function Signup() {
             Work Email <span>*</span>
           </Label>
           <div className="form-border">
-            <Input placeholder="Your Work Email" className="form-input group" />
+            <Input placeholder="Your work email" className="form-input group" />
           </div>
         </Field>
 

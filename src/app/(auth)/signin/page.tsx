@@ -15,7 +15,7 @@ export default function Signin() {
         <Field className="w-full">
           <Label className="form-label">Email</Label>
           <div className="form-border">
-            <Input placeholder="Your Full Name" className="form-input group" />
+            <Input placeholder="Your email" className="form-input group" />
           </div>
         </Field>
 
@@ -27,7 +27,7 @@ export default function Signin() {
             </Link>
           </div>
           <div className="form-border">
-            <Input placeholder="Your Password" className="form-input group" />
+            <Input placeholder="Your password" className="form-input group" />
           </div>
         </Field>
 
