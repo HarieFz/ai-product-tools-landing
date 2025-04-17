@@ -2,7 +2,7 @@
 
 /* Forms */
 .form-label {
-  @apply text-sm font-medium text-[#838997];
+  @apply text-sm font-medium text-[#838997] [&_span]:text-[#F43F5E];
 }
 
 .form-border {
