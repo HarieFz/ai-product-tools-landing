@@ -50,10 +50,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${nacelle.variable} flex flex-col items-center min-h-screen bg-gray-950 antialiased`}
-      >
-        <div className="relative max-w-6xl">
+      <body className={`${inter.variable} ${nacelle.variable} flex flex-col items-center bg-gray-950 antialiased`}>
+        <div className="relative max-w-6xl w-full min-h-screen shrink-0">
           <div className="absolute -top-10 left-60 z-0">
             <BlurredShapeGray className="w-full h-full" />
           </div>

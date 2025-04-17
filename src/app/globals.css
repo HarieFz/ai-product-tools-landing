@@ -2,6 +2,7 @@
 
 /* Additional styles */
 @import "../css/additional-styles/theme.css" layer(components);
+@import "../css/additional-styles/utility-patterns.css";
 
 @theme {
   --font-inter: var(--font-inter), sans-serif;

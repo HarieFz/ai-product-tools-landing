@@ -1,55 +1,22 @@
 /* Buttons */
-.btn,
-.btn-sm {
-    @apply inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-all;
-}
-
-.btn {
-    @apply px-4 py-[11px];
-}
-
-.btn-sm {
-    @apply px-3 py-[7px];
-}
 
 /* Forms */
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
-    -webkit-appearance: none;
+.form-label {
+  @apply text-sm font-medium text-[#838997];
 }
 
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select,
-.form-checkbox,
-.form-radio {
-    @apply border border-gray-700 bg-gray-900/50 focus:border-gray-600 focus:ring-0 focus:ring-offset-0;
+.form-border {
+  @apply mt-1 rounded-lg p-px bg-linear-to-r from-0% focus-within:from-[#1F2937]/80 from-[#111827]/80 via-50% focus-within:via-[#374151] via-[#1F2937] to-100% focus-within:to-[#1F2937]/80 to-[#111827]/80 transition-colors;
 }
 
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select {
-    @apply rounded-lg px-4 py-2.5 text-sm text-gray-200;
+.form-input {
+  @apply w-full rounded-[calc(0.5rem-1px)] bg-gray-900 focus:outline-none;
 }
 
-.form-input,
-.form-textarea {
-    @apply placeholder-gray-600;
+.form-input {
+  @apply px-4 pt-[10px] pb-3 text-sm text-[#E5E7EB];
 }
 
-.form-select {
-    @apply pr-10;
-}
-
-.form-checkbox,
-.form-radio {
-    @apply text-indigo-500;
-}
-
-.form-checkbox {
-    @apply rounded-xs;
+.form-input {
+  @apply placeholder:text-[#374151] placeholder:text-sm;
 }

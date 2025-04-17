@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import VideoThumb from "../../../../public/images/hero-image-01.jpg";
 import Subtract from "../../../../public/images/subtract.svg";
 import ArrowRight from "../../../../public/images/arrow-right-svgrepo-com.svg";
+import BlurredShapeGray from "../../../../public/images/blurred-shape-gray.svg";
 import Image from "next/image";
 import CustomButton from "@/components/CustomButton";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
@@ -20,7 +21,10 @@ export default function Hero() {
   }, [isOpen]);
 
   return (
-    <div className="flex flex-col items-center mb-20">
+    <div className="relative flex flex-col items-center mb-20">
+      <div className="absolute -bottom-40 -left-40">
+        <BlurredShapeGray />
+      </div>
       <h1
         className="animate-gradient bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle font-semibold text-transparent text-5xl mb-5"
         data-aos="fade-up"

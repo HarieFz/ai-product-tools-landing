@@ -16,14 +16,14 @@ export default function CustomButton({
   return (
     <Link href={href || ""}>
       <div
-        className={`${
+        className={`w-full ${
           variant === "secondary"
             ? "p-px rounded-lg bg-linear-to-r from-0% from-[#1F2937] via-50% via-[#4B5563] to-100% to-[#1F2937]"
             : ""
         }`}
       >
         <Button
-          className={`data-[hover]:cursor-pointer transition-colors ${
+          className={`w-full data-[hover]:cursor-pointer transition-colors ${
             size === "large" ? "px-4 py-[11px]" : "px-3 py-[5px]"
           } rounded-[calc(0.5rem-1px)] bg-linear-to-t ${
             variant === "primary"
